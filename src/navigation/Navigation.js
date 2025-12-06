@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import ProductScreen from "../screens/ProductScreen";
-import ProductDetailsScreen from "../screens/ProductDetailsScreen";
+import ProductDetailScreen from "../screens/ProductDetailScreen";
 import ShoppingCartScreen from "../screens/ShoppingCartScreen";
 
 const Stack = createNativeStackNavigator();
@@ -30,7 +30,7 @@ export default function Navigation() {
         />
         <Stack.Screen
           name="ProductDetails"
-          component={ProductDetailsScreen}
+          component={ProductDetailScreen}
           options={({ navigation }) => ({
             title: "Détails du produit",
             headerRight: () => (

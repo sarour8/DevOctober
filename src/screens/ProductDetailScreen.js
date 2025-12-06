@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import products from "../data/products";
 
-const ProductDetailsScreen = ({ route }) => {
+const ProductDetailScreen = ({ route }) => {
   const id = route?.params?.id;
   const product = products.find((p) => p.id === id);
   const { width } = useWindowDimensions();
@@ -60,7 +60,7 @@ const ProductDetailsScreen = ({ route }) => {
   );
 };
 
-export default ProductDetailsScreen;
+export default ProductDetailScreen;
 const styles = StyleSheet.create({
   title: {
     fontSize: 34,
